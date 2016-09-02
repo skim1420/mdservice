@@ -1,0 +1,10 @@
+steps:
+  - name: "gcr.io/cloud-builders/dockerizer"
+    args:
+      - "gcr.io/spinnaker-1022/mdservice:0.1"
+images:
+  - "gcr.io/spinnaker-1022/mdservice:0.1"
+options:
+  requestedVerifyOption: "VERIFIED"
+  sourceProvenanceHash:
+    - "SHA256"
