@@ -1,0 +1,9 @@
+{
+  triggerTemplate: {
+    projectId: "spinnaker-1022",
+    repoName: "mdservice",
+    branchName: "lean.*"
+  },
+  filename: "cloudbuild.yaml"
+}
+
