@@ -1,2 +1,2 @@
 # mdservice
-Spinnaker end to end demo
+Cloud CICD end-to-end demo
