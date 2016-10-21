@@ -1,9 +1,0 @@
-{
-  triggerTemplate: {
-    projectId: "spinnaker-1022",
-    repoName: "mdservice",
-    tagName: "release.*"
-  },
-  filename: "cloudbuild.yaml"
-}
-
