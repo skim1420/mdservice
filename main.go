@@ -1,15 +1,15 @@
 package main
 
 import (
-	"io"
-	"net/http"
+  "io"
+  "net/http"
 )
 
 func hello(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "<body style='background-color: blue'>Hello World!</body>")
+  io.WriteString(w, "<body style='background-color: blue'>Hello World!</body>")
 }
 
 func main() {
-	http.HandleFunc("/", hello)
-	http.ListenAndServe(":80", nil)
+  http.HandleFunc("/", hello)
+  http.ListenAndServe(":80", nil)
 }
