@@ -1,5 +1,6 @@
-FROM alpine
-
-COPY gopath/bin/mdservice /go/bin/mdservice
-
-ENTRYPOINT /go/bin/mdservice
+FROM golang:latest
+RUN mkdir /mdservice
+ADD . /mdservice
+WORKDIR /mdservice
+RUN go build -o main .
+CMD ["/mdservice/main"]

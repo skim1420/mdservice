@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/skim1420/mdservice"]
     env: ["PROJECT_ROOT=github.com/skim1420/mdservice"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/spinnaker-1022/mdservice:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/spinnaker-1022/mdservice:$REVISION_ID", "-f", "Dockerfile.gcb", "."]
 images:
   - "gcr.io/spinnaker-1022/mdservice:$REVISION_ID"
