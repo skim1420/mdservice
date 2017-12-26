@@ -1,2 +1,2 @@
 # mdservice
-Cloud CICD end-to-end demo micro service
+Cloud CICD end-to-end demo microservice
